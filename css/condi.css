@@ -1,0 +1,207 @@
+:root {
+  --dark-color: #19283f;
+  --green: #33d1cc;
+  --red: #ff3155;
+  --yellow: #ffc400;
+  --section: #eff7fa;
+}
+.main-btn {
+  background-color: var(--red);
+  color: var(--yellow);
+}
+.main-btn:hover {
+  color: var(--dark-color);
+}
+.main-head::after {
+  position: absolute;
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: var(--green);
+  left: 50%;
+  transform: translateX(-50%);
+}
+ul {
+  list-style: none;
+}
+ul > li > a {
+  text-decoration: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.navbar {
+  background-color: var(--dark-color);
+}
+.navbar .navbar-brand {
+  color: #fff;
+}
+.navbar .navbar-toggler {
+  color: #fff;
+  font-size: 25px;
+  border-color: #fff;
+}
+.navbar .navbar-toggler:focus,
+.navbar .navbar-toggler:hover {
+  box-shadow: none;
+  border-color: var(--dark-color);
+}
+.navbar .nav-item {
+}
+.navbar .nav-item .nav-link {
+  color: #fff;
+}
+.navbar .nav-item .nav-link .active,
+.navbar .nav-item .nav-link:focus,
+.navbar .nav-item .nav-link:hover,
+.navbar .navbar-brand:hover {
+  color: var(--green);
+}
+.search {
+  border-left: 1px solid #33d1cc;
+  color: var(--green);
+  cursor: pointer;
+}
+.search svg:hover {
+  transform: scale(1.2);
+}
+
+/* start landing */
+.landing {
+  background-color: var(--dark-color);
+  height: calc(100vh - 64px);
+}
+
+/* end landing */
+
+/* start features */
+.features .flat h4 {
+  color: var(--yellow);
+}
+.features .icons {
+  height: 12rem;
+}
+.features .icons .num {
+  font-size: 200px;
+  color: var(--section);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.features .icons .pen {
+  color: var(--green);
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* end features */
+
+/* start portfolio */
+.portfolio {
+  background-color: var(--section);
+}
+.portfolio .title li:not(.active) a {
+  font-size: 1rem;
+  color: #000;
+}
+.portfolio .title li:not(.active) a:hover {
+  color: var(--red);
+}
+.portfolio .card {
+  position: relative;
+  padding: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.portfolio .card::before {
+  content: attr(data-work);
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: rgb(51 209 204 / 76%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  transition: 0.5s;
+  transform: translateX(calc(-100% - 5px));
+}
+.portfolio .card:hover::before {
+  transform: translateX(0);
+}
+.portfolio .card img {
+}
+/* end portfolio */
+/* start team */
+.team {
+  background-color: var(--section);
+}
+.team .text h2 {
+  color: var(--yellow);
+  font-weight: bold;
+}
+.team .row h4 {
+  background-color: var(--green);
+  color: #fff;
+}
+/* .team .card {
+  position: relative;
+}
+.team .card::before {
+  position: absolute;
+  content: attr(data-card);
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  bottom: -20%;
+  background-color: var(--green);
+} */
+/* end team */
+.project {
+  background-color: var(--dark-color);
+}
+.project h2 {
+  color: #fff;
+}
+.blog .row .box {
+  border: 1px solid #dfdfdf;
+}
+
+.sub {
+  background-color: var(--yellow);
+}
+.sub .row input {
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+.sub .row input:focus-visible {
+  outline: none;
+}
+
+.footer {
+  background-color: var(--dark-color);
+}
+.footer .copyright > span {
+  color: var(--green);
+}
+.footer .copyright div span {
+  color: var(--yellow);
+}
+.footer .contact ul svg {
+  width: 20px;
+  height: 20px;
+}
+.footer .facebook {
+  background-color: #1877f2;
+}
+.footer .twitter {
+  background-color: #1da1f2;
+}
+.footer .linkedin {
+  background-color: #0077b5;
+}
+.footer .youtube {
+  background-color: #ff0000;
+}
